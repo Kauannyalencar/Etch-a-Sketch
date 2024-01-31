@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+
+    </header>
+    <main>
+        <div class="game">
+            <label for="size">How many squared do you want ?</label>
+            <input type="number" name="size" value="16" placeholder="(Max 100)" onchange="changeSize(this.value)">
+            <button id="resize">Resize</button>
+            <div class="botoes">
+                <button class="btn" id="black">Black</button>
+                <button class="btn" id="random">Random</button>
+                <button class="btn" id="reset" onclick="resetPage()">Reset</button>
+            </div>
+        </div>
+
+        <div class="container">
+
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
